@@ -2458,3 +2458,9 @@ border-radius:20px;
 margin:20px 0;
 
 }
+.profile-card img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;
+}
