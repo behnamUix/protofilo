@@ -1439,7 +1439,20 @@ footer {
     width: 18px;
     height: 18px;
   }
+
+  .red-glow,
+  .blue-glow {
+    filter: none;
+
+    opacity: 0.3;
+  }
+  .card {
+    backdrop-filter: none;
+
+    background: #111;
+  }
 }
+
 .social-link {
   display: inline-flex;
   align-items: center;

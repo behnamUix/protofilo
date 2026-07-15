@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="css/pdf.css" />
+  </head>
+  <body>
+    <div class="pdf-container">
+      <div class="pdf-header">
+        <h2>📄 <span>PDF Viewer</span></h2>
+        <div class="controls">
+          <button onclick="downloadPDF()" class="download">
+            <i class="fas fa-download"></i> دانلود
+          </button>
+          <button onclick="window.location.reload()">
+            <i class="fas fa-redo"></i> بازنشانی
+          </button>
+          <button>
+            <i class="fas fa-home"></i>
+            <a style="color: gainsboro; text-decoration: none" href="index.html"
+              >خانه</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="pdf-viewer">
+        <embed
+          src="pdf/MVVM_MVI Article.pdf"
+          type="application/pdf"
+          id="pdfEmbed"
+        />
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="js/pdfViewver.js"></script>
+  </body>
+</html>
